@@ -1,28 +1,24 @@
 import React from "react";
-import { Tab, Menu, Icon } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
 import { Nav, NavItem } from 'reactstrap';
-
+import styled from 'styled-components';
+import "../index.css";
 // TODO: Add missing menu/tabs/nav below
 
-// Review Semantic UI Component options for nav-like UI:
-// https://react.semantic-ui.com/collections/menu/
-// https://react.semantic-ui.com/modules/tab/
-// https://react.semantic-ui.com/elements/button/
-// https://react.semantic-ui.com/collections/breadcrumb/
+
 
 export default function TabNav() {
     return (
         <div>
-          <Nav>
+          <Nav card="true" justified="true" fill="true">
             <NavItem>
-              <NavLink exact to="/characters" activeClassName="activeNavButton">Characters</NavLink>
+              <NavLink exact to="/characters" activeClassName="activeNavButton transform transform-active" className="navButton">Characters</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink exact to="/locations" activeClassName="activeNavButton">Locations</NavLink>
+              <NavLink exact to="/locations" activeClassName="activeNavButton" className="navButton">Locations</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink exact to="/episodes" activeClassName="activeNavButton">Episodes</NavLink>
+              <NavLink exact to="/episodes" activeClassName="activeNavButton" className="navButton">Episodes</NavLink>
             </NavItem>
           </Nav>
           <hr />
@@ -31,4 +27,3 @@ export default function TabNav() {
 };
 
 
-// <NavLink exact to="/" activeClassName="activeNavButton">Home</NavLink>

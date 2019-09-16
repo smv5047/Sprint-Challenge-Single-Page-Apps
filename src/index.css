@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: #A9D3E9;
 }
 
 main {
@@ -36,4 +37,32 @@ main {
 
 header h1 {
   text-align: center;
+}
+
+.navButton {
+  padding: 5px 2.5%;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  padding-left: 5%;
+}
+
+.nav-links a.active {
+  border-bottom: 1px solid #1c5d76;
+  
+}
+
+.activeNavButton {
+  color: purple;
+  padding: 4%;
+  border: 2px solid gray;
+  border-bottom: none;
+  transition: all 2s ease;
+}
+
+
+.cards {
+  transition: all 4s ease;
 }

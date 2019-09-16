@@ -7,7 +7,7 @@ export default function EpisodeCard(props) {
   console.log(props)
   return (
     <div>
-      <Card className="text-center">
+      <Card className="text-center cards">
         {/* <CardImg top width="100%" src={props.epi.image} alt={props.char.name} /> */}
         <CardBody>
           <CardTitle>{props.epi.name}</CardTitle>
