@@ -17,17 +17,10 @@ export default function CharacterList() {
 
   return (
     <section className="character-list grid-view">
-      <h2>Characters!</h2>
+      
       {characters.map(char => (
         <CharacterCard key={char.id} char={char} />
       ))}
     </section>
   );
 }
-
-
-// <div className="movie-list">
-//       {movies.map(movie => (
-//         <MovieDetails key={movie.id} movie={movie} />
-//       ))}
-//     </div>
